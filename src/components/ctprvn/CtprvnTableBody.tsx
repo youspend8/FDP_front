@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 
 interface Props {
-  key: Number;
+  index: Number;
   dataTime: String;
   stationName: String;
   pm10Value: Number;
@@ -11,10 +11,10 @@ interface Props {
 }
 
 const CtprvnTableBody: FunctionComponent<Props> = (props) => {
-  const { key, dataTime, stationName, pm10Value, pm10Value24, pm25Value, pm25Value24 } = props;
+  const { index, dataTime, stationName, pm10Value, pm10Value24, pm25Value, pm25Value24 } = props;
   return (
     <tr>
-      <td>{key}</td>
+      <td>{index}</td>
       <td>{dataTime}</td>
       <td>{stationName}</td>
       <td>{pm10Value}</td>

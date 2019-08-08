@@ -19,7 +19,7 @@ const Ctprvn = () => {
       setParm(parm);
       setResult(list);
     }).catch(err => console.error(err));
-  });
+  }, []);
 
   return (
     <table style={{textAlign: "center", marginLeft: 'auto', marginRight: 'auto'}}>
@@ -41,6 +41,7 @@ const Ctprvn = () => {
             return (
               <CtprvnTableBody 
                 key={index}
+                index={index + 1}
                 dataTime={dataTime} 
                 stationName={stationName} 
                 pm10Value={pm10Value}
