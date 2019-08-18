@@ -13,6 +13,9 @@ const Main = () => {
       <Link to="/getCtprvnRltmMesureDnsty">
         <button className="btn btn-primary" type="button">시도별 실시간 측정정보 조회 오퍼레이션</button>
       </Link>
+      <Link to="/projectInfo">
+        <button className="btn btn-primary" type="button">프로젝트 정보</button>
+      </Link>
     </div>
   );
 }
